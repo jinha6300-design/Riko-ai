@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: riko-ai
+    runtime: node
+    plan: free
+    buildCommand: echo "no build needed"
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false        # you type it in the Render dashboard; it is never in the code
+      - key: APP_PASSCODE
+        sync: false        # choose any passcode so strangers can't use your key
