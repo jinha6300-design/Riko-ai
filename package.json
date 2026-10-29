@@ -1,0 +1,13 @@
+{
+  "name": "riko-ai",
+  "version": "1.0.0",
+  "description": "RIKO AI - Hindi/English voice assistant powered by Gemini",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
